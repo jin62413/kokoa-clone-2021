@@ -1,0 +1,49 @@
+.nav {
+    position: fixed; /* 고정 */
+    bottom: 0; /* 아래로 내리기 */
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+/* CSS에서 200px 크기의 box에 50px padding이 들어가도록 만들 때
+내가 원하는 box: content 150px + padding 50px = 총 크기 200px
+CSS가 만든 box: content 200px + padding 50px = 총 크기 250px
+해결책 => box-sizing: border-box;를 사용해 CSS가 padding을 신경쓰지 않고 box크기를 늘리지 않도록 함 */
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    position: relative; /* 처음 위치한 곳을 기준으로 위치를 수정 */
+    color: #2e363e;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px; /* 사각형을 원으로 만들고 싶다면 사각형 width의 반을 값으로 쓰면 됨 */
+    display: flex; /* 원래는 1과 아이콘이 나란히 있음(span은 in-line이기 때문) display: flex를 사용해 block으로 변환하여 옆에 오지 않고 위아래로 오도록 바꿈 */
+    justify-content: center; /* 숫자와 border를 주축(기본: 수평) 기준으로 수평정렬 */
+    align-items: center; /* 숫자와 border를 수직 정렬 */
+    color: white;
+    font-weight: 600;
+    position: absolute; /* 가장 가까운 relative를 가진 부모 기준으로 움직임 */
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav__notification-dot {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    right: -8px;
+    top: -15px;
+}
