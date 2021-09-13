@@ -11,7 +11,7 @@
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <i class="fas fa-wifi"></i>
+            <i class="fas fa-wifi"></i> <!-- i는 아이콘이란 뜻 -->
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
@@ -30,9 +30,12 @@
         </p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Email or phone number">
-        <input type="password" placeholder="Password">
+    <!-- action은 어떤 페이지로 data를 보낼지 지정
+         method는 data를 보내는 방식(POST타입과 GET방식)
+         (POST는 백앤드 서버에 정보를 전송하는 방식, GET은 URL에 정보가 담겨서 전송. GET은 보안에 취약) -->
+    <form action="friends.html" method="get" id="login-form"> 
+        <input name="username" type="text" placeholder="Email or phone number">
+        <input name="password" type="password" placeholder="Password">
         <input type="submit" value="Log In" />
         <a href="#">Find Kokoa Account or Password</a>
     </form>

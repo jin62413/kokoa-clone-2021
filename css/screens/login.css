@@ -1,0 +1,59 @@
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* input type이 submit이 아닐 때 적용 */
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out; /* 밑줄에 애니메이션 적용 */
+}
+
+#login-form input::placeholder { /* placeholder앞에 ::을 넣으면 placeholder를 꾸밀 수 있음 */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* 먼저 모든 input의 focus를 없애기 위해 reset.css파일에 outline: none;을 적용함 */
+#login-form input:focus {
+    border-color: var(--yellow); /* variable.css파일과 연동 */
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer; /* 마우스 커서 모양 바뀜 */
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit; /* 부모에게 color를 상속받아 적용(기본값 black) */
+    font-size: 13px;
+}
