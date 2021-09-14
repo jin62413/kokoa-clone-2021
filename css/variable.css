@@ -1,4 +1,6 @@
-/* 색상 변수 적용 */
+/* 변수 적용 */
 :root {
-    --yellow: #fae100;
+    --yellow: #fae100; /* login border */
+    --main-color: #ffffff; /* status-bar, screen-header */
+    --horizontal-space: 20px; /* screen-header, user-component */
 }

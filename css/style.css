@@ -6,11 +6,15 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #2e363e; /* 글자, 아이콘 등 색상변경 */
     height: 1000vh;
+    padding-top: 97px; /* body에 padding값을 주어 고정된 상단바에 다른 내용이 가려지지 않도록 함 */
 }

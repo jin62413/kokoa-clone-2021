@@ -1,0 +1,50 @@
+/* screenshot 04의 채팅창을 기준으로 만들어서 screenshot 03의 친구목록에 변형해서 사용 */
+.user-component {
+    justify-content: space-between;
+}
+
+.user-component,
+.user-component__column:first-child {
+    /* user-component에 display: flex는 user-component__column 2개가 정렬
+    첫번째 div 안에 있는 이미지와 글자을 정렬하기 위해 first-child를 사용 */
+    display: flex;
+    align-items: center;
+}
+
+.user-component__avatar {
+    /* 이미지 크기- 큰 사이즈(프로필): 80x80, 중간 사이즈(채팅창): 70x70, 작은 사이즈(프로필 밑 채널): 60x60 */
+    width: 70px;
+    height: 70px;
+    border-radius: 40%;
+    object-fit: cover; /* 이미지 사이즈 변경 시, 가로 세로 비율을 유지 */
+    margin-right: 20px;
+}
+
+.user-component__title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.user-component__subtitle {
+    margin-top: 8px;
+    font-size: 17;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+    width: 80px;
+    height: 80px;
+}
+
+.user-component__avatar--sm {
+    width: 60px;
+    height: 60px;
+}
+
+.user-component__title--not-bold {
+    font-weight: 400;
+}
+
+.user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.5);
+}

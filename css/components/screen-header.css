@@ -5,8 +5,9 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: var(--horizontal-space);
     align-items: center;
+    background-color: var(--main-color);
 }
 
 .screen-header__title {
