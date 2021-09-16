@@ -1,0 +1,11 @@
+.badge {
+    background-color: tomato;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px; /* 사각형을 원으로 만들고 싶다면 사각형 width의 반을 값으로 쓰면 됨 */
+    display: flex; /* 원래는 1과 아이콘이 나란히 있음(span은 in-line이기 때문) display: flex를 사용해 block으로 변환하여 옆에 오지 않고 위아래로 오도록 바꿈 */
+    justify-content: center; /* 숫자와 border를 주축(기본: 수평) 기준으로 수평정렬 */
+    align-items: center; /* 숫자와 border를 수직 정렬 */
+    color: white;
+    font-weight: 600;
+}
