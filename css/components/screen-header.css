@@ -1,5 +1,6 @@
 .screen-header {
     position: fixed;
+    z-index: 1;
     top: 25px;
     width: 100%;
     box-sizing: border-box;
@@ -17,4 +18,8 @@
 
 .screen-header__icons span {
     margin-left: 25px;
+}
+
+.screen-header__icons {
+    position: relative;
 }

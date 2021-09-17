@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i> <!-- fa-lg 어떤 아이콘도 large사이즈로 만들어주는 코드 -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span class="badge-dot"></span>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="recommend-friends">
+            <h6 class="recommend-friends__title">Recommend Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i></span>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#baby</h5>
+                    <h6 class="open-post__hashtags">#RAPUNZEL#PRINCESS#CUTE</h6>
+                    <div class="open-post__members">
+                        <img src="https://1.gall-img.com/hygall/files/attach/images/82/589/233/185/6393118694f04d939a1ca8c5a367292b.png" />
+                        <span class="open-post__member-count">802 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="https://mblogthumb-phinf.pstatic.net/MjAxODA2MjZfMjkw/MDAxNTI5OTQ3MjI2MDkw.rQGJoaHxSRynjcOYQeLNJG8oOLK_o1s0K_jJchjmTCcg.8tusXVn2oRB6RdIASkgU2oXo0iDF9ocMEocbSox0ZGog.JPEG.sinnam88/%EB%94%94%EC%A6%88%EB%8B%88_%EB%9D%BC%ED%91%BC%EC%A0%A4_%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_%EA%B3%A0%ED%99%94%EC%A7%88_%EB%AA%A8%EC%9D%8C_%283%29.jpg?type=w800" />
+                        <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#couple</h5>
+                    <h6 class="open-post__hashtags">#Rapunzel#Eugene#lights</h6>
+                    <div class="open-post__members">
+                        <img src="https://mblogthumb-phinf.pstatic.net/MjAxODAyMTNfODgg/MDAxNTE4NTA2NjEwNTMw.LbPPURWiFMy948FNP57-IZNbLGeze40UOOTaSVqt48wg.dkHpQWYM08iczlZBvdUakM_MOVZKkz1v4bevqJqQLeUg.JPEG.d_hye97/egg98w4g9.jpg?type=w800" />
+                        <span class="open-post__member-count">299 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="https://mblogthumb-phinf.pstatic.net/20150807_210/dhkdemfprla_1438877206627T7ULr_JPEG/00084.m2ts%28Tangled_2010_1080p_Blu-ray_CEE_AVC_DTS-HD_MA_7.1-HQ-Films%29_20150805_2.jpg?type=w2" />
+                        <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>215</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">2</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__notification-dot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a></li>
+        </ul>
+    </nav>
+
+    <script script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -3,4 +3,6 @@
     --yellow: #fae100; /* login border */
     --main-color: #ffffff; /* status-bar, screen-header */
     --horizontal-space: 20px; /* screen-header, user-component */
+    --main-boder: 1px solid rgba(0, 0, 0, 0.2); /* friends, find */
+    --font-color-gray: rgba(0, 0, 0, 0.5); /* find */
 }
