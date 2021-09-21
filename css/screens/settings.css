@@ -1,0 +1,43 @@
+.settings__setting {
+    padding: 27px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settings__setting i {
+    opacity: 0.9;
+    margin: 0px 15px 0px 10px;
+    font-size: 22px;
+    width: 30px; /* 아이콘마다 사이즈가 달라 글자 왼쪽 배열이 맞지 않기 때문에 width로 맞춰줌 */
+}
+
+.settings__setting:last-child {
+    border-bottom: none; /* list 마지막 요소의 border 없애기 */
+}
+
+.settings__setting__column:last-child {
+    opacity: 0.5;
+}
+
+.settings-list:first-child {
+    border-bottom: var(--main-border);
+    border-width: 100%;
+    padding-bottom: 20px;
+}
+
+.settings-list:last-child {
+    padding-top: 20px;
+}
+
+.settings-list:last-child .settings__setting:nth-child(n+3):nth-child(n+4) span {
+    display: inline-flex; /* inline-flex로 flex container를 인라인으로 변환, text길이에 맞춰 유동적으로 변환 가능 */
+}
+
+.settings-list:last-child .settings__setting:nth-child(n+3):nth-child(n+4) span:nth-of-type(2) {
+    font-size: 15px;
+    margin-left: 10px;
+}
