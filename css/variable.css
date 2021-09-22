@@ -5,4 +5,5 @@
     --horizontal-space: 20px; /* screen-header, user-component, alt-screen-header */
     --main-border: 1px solid rgba(0, 0, 0, 0.2); /* friends, find, more */
     --font-color-gray: rgba(0, 0, 0, 0.5); /* find, more */
+    --chat-background-color: #abc1d1; /* chat */
 }

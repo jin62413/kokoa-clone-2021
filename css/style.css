@@ -17,11 +17,15 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
+
+html, body {
+    height: 100%; /* 내용에 맞게 높이 지정, %는 부모 엘리먼트에 대해 상대적으로 높이가 정해짐, 최상위 부모인 html과 body에게 높이 부여 */
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
     color: #2e363e; /* 글자, 아이콘 등 색상변경 */
-    height: 1000vh;
     padding-top: 97px; /* body에 padding값을 주어 고정된 상단바에 다른 내용이 가려지지 않도록 함 */
 }
 

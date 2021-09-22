@@ -1,6 +1,6 @@
 .status-bar {
     position: fixed;
-    z-index: 1; /* 요소가 제일 위쪽에 위치하도록 함 */
+    z-index: 2; /* 요소가 제일 위쪽에 위치하도록 함 */
     top: 0px;
     width: 100%;
     box-sizing: border-box;
@@ -31,4 +31,16 @@
 
 .status-bar__column .fa-battery-full {
     margin: 0px 5px;
+}
+
+.status-bar__chat {
+    position: fixed;
+    z-index: 2; /* 요소가 제일 위쪽에 위치하도록 함, 숫자가 작을수록 낮은 layer, 클수록 위 layer */
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+    background-color: var(--chat-background-color);
 }
