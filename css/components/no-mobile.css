@@ -1,0 +1,20 @@
+#no-mobile {
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+    
+}
+
+/* 화면 크기가 523px보다 크다면 */
+@media screen and (max-width:523px) {
+    #no-mobile {
+        display: none;
+    }
+}
